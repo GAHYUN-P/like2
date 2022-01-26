@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 const Home = (props) => {
   const week_days = ["월", "화", "수", "목", "금", "토", "일"];
   let navigate = useNavigate();
-  const my_star = React.useRef(null);
   const star_count = Array.from({ length: 5 }, (v, i) => i);
 
 
@@ -22,7 +21,7 @@ const Home = (props) => {
           return (
             <ItemStyle key={index}>
               <span>{day}</span>
-              <div href={my_star}>
+              <div>
                 {star_count.map((num, idx) => {
                   return (
                     <Star
