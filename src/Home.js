@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useState,useEffect } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 // 페이지 이동
 
 const Home = (props) => {
-  const week_days = ["월", "화", "수", "목", "금", "토", "일"];
+  const wbox = ["월", "화", "수", "목", "금", "토", "일"];
+  let Nowdate = new Date().getDay();
+  const [week_days,setWeek] = useState([...wbox.slice(Nowdate - 1, 7),...wbox.slice(0, Nowdate - 1)])
   let navigate = useNavigate();
   const star_count = Array.from({ length: 5 }, (v, i) => i);
+  // [0,1,2,3,4]
 
 
   return (
@@ -18,6 +21,7 @@ const Home = (props) => {
           // Math.floor 소수점 아래 버림(Math.random이 부동소수점 난수를 생성하기 때문)
           // Math.floor(Math.random() * 5)는 0~4.9999... 즉, 0~4 범위의 정수
           // 평점은 1 부터니까 +1을 해줌
+
           return (
             <ItemStyle key={index}>
               <span>{day}</span>
