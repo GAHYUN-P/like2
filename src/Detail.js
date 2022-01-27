@@ -47,7 +47,7 @@ const Review = styled.div`
 `;
 
 const WeekBox = styled.span`
-  background-color: #aab9ff;
+  background-color: #A6A4A5;
   border-radius: 5px;
   padding: 2px;
   margin: 5px;
@@ -61,13 +61,20 @@ const WeekBox = styled.span`
 `;
 
 const BackButton = styled.button`
-  width: 100%;
-  background-color: #a0afff;
+  width: 50%;
+  background-color: #0D0D0D;
   border: none;
   border-radius: 5px;
   padding: 1rem;
   color: white;
   font-weight: bold;
+  display: block;
+  margin: auto;
+  &:hover {
+    background-color: #F2F2F2;
+    color: #0D0D0D; 
+    border: solid;
+  }
 `;
 
 export default Detail;

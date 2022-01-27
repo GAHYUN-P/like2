@@ -25,7 +25,7 @@ function App() {
 const Container = styled.div`
   max-width: 400px;
   min-height: 60vh;
-  background-color: #d2d2ff;
+  background-color: #D9D9D9;
   padding: 15px;
   margin: 20px auto;
   border-radius: 5px;

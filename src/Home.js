@@ -32,7 +32,7 @@ const Home = (props) => {
                       key={idx}
                       style={
                         idx < random
-                          ? { backgroundColor: "#AD9AEE" }
+                          ? { backgroundColor: "#A6A4A5" }
                           : { backgroundColor: "#f9ffff" }
                       }
                     ></Star>
@@ -84,7 +84,7 @@ const ItemStyle = styled.div`
     background-color: white;
     border-radius: 5px;
     font-weight: bold;
-    color: #8f7cee;
+    color: #0D0D0D;
     text-align: center;
   }
   div {
@@ -104,11 +104,14 @@ const Star = styled.div`
 const Button = styled.div`
   width: 0px;
   height: 0px;
-  border-left: 40px solid #6a5acd;
+  border-left: 40px solid #0D0D0D;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   margin: 5px;
   display: flex;
+  &:hover {
+    border-left: 40px solid #595959;
+  }
 `;
 
 export default Home;

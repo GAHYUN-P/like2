@@ -31,7 +31,7 @@ const Star = (props) => {
             // 보통 키값은 데이터의 id를 가져옴
             style={
               idx < count
-                ? { backgroundColor: "#AD9AEE" }
+                ? { backgroundColor: "#A6A4A5" }
                 : { backgroundColor: "#f9ffff" }
             }
           ></Circle>
@@ -42,8 +42,8 @@ const Star = (props) => {
 };
 
 const Circle = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   background-color: #ddd;
   margin: 5px;
